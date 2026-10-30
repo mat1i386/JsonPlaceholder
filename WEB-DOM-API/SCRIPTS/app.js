@@ -86,7 +86,7 @@ function renderPosts(postsToRender) {
     function showUserDetails(userId) {
         const user = allUsers.find(item => item.id === Number(userId));
         if (!user) return;
-
+        document.getElementById('user-id').textContent = user.id;
         document.getElementById('user-name').textContent = user.name;
         document.getElementById('user-username').textContent = user.username;
         document.getElementById('user-email').textContent = user.email;
